@@ -1,0 +1,43 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  font-family: inherit;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+input,
+select,
+button {
+  color: inherit;
+}
+
+select,
+option,
+button,
+label {
+  cursor: pointer;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto
+}
