@@ -5,9 +5,9 @@
 
 :root {
   --border-radius: 12px;
-  --background-rgb: 15, 4, 14;
-  --foreground-rgb: 255, 255, 255;
-  --foreground-secondary-rgb: 146, 146, 147;
+  --background: 15 4 14;
+  --foreground: 255 255 255;
+  --foreground-secondary: 146 146 147;
 
   --primary-glow: conic-gradient(
     from 180deg at 50% 50%,
@@ -31,8 +31,8 @@ html {
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: rgb(var(--background-rgb));
+  color: rgb(var(--foreground));
+  background: rgb(var(--background));
 }
 
 section,
