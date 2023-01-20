@@ -15,7 +15,7 @@ export default function Hero() {
           well-versed in modern frontend technologies and eco systems.
         </p>
       </div>
-      <AfeezAvatar />
+      <AfeezAvatar className="flex-auto" />
     </header>
   )
 }

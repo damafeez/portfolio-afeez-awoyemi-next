@@ -1,8 +1,9 @@
+import { clsx } from 'clsx'
 import styles from './AfeezAvatar.module.css'
 
-export default function AfeezAvatar() {
+export default function AfeezAvatar({ className = '' }) {
   return (
-    <div className={styles.canvas}>
+    <div className={clsx(styles.canvas, className)}>
       <div className={styles.cap}></div>
       <div className={styles.head}>
         <div className={styles.eye}></div>
