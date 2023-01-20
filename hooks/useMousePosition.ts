@@ -1,14 +1,19 @@
 import { useEffect } from 'react'
 
 export default function useMousePosition() {
-  const onMouseMove = function (e: MouseEvent) {
-    document.body.style.setProperty('--mouse-x', e.clientX.toString())
-    document.body.style.setProperty('--mouse-y', e.clientY.toString())
-  }
-
   useEffect(() => {
-    document.addEventListener('pointermove', onMouseMove)
+    const onMouseMove = function (e: MouseEvent) {
+      document.body.style.setProperty(
+        '--mouse-x',
+        (e.clientX + window.scrollX).toString()
+      )
+      document.body.style.setProperty(
+        '--mouse-y',
+        (e.clientY + window.scrollY).toString()
+      )
+    }
 
-    return () => document.removeEventListener('pointermove', onMouseMove)
+    document.addEventListener('mousemove', onMouseMove)
+    return () => document.removeEventListener('mousemove', onMouseMove)
   })
 }
