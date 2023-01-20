@@ -1,0 +1,107 @@
+.canvas {
+  max-width: 18em;
+  max-width: 18em;
+  aspect-ratio: 1;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+
+  --cap: #111111;
+  --head: #343434;
+  --body: #111111;
+  --head-width: 35%;
+}
+
+.cap {
+  width: var(--head-width);
+  aspect-ratio: 1.8;
+  background-color: var(--cap);
+  clip-path: polygon(15% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 40%);
+
+  position: relative;
+}
+
+.cap::after {
+  content: "";
+  width: 50%;
+  aspect-ratio: 1.5;
+
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+
+  background-color: rgba(100, 100, 100, 0.2);
+}
+
+.head {
+  width: var(--head-width);
+  aspect-ratio: 1 / 1.005;
+  background: var(--head);
+
+  border-radius: 0 0 1em 1em;
+  position: relative;
+}
+
+.eye {
+  width: 1.5em;
+  height: 1.5em;
+  background-color: rgb(150, 150, 150);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 12%;
+  border-radius: 10%;
+
+  animation: blink 10s infinite;
+  transform-origin: center center;
+}
+
+.eye::after {
+  content: "";
+  background: black;
+  height: 25%;
+  aspect-ratio: 1;
+  display: block;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.eye:nth-child(1) {
+  left: 12%;
+}
+.eye:nth-child(2) {
+  right: 12%;
+}
+
+.mouth {
+  width: 2em;
+  aspect-ratio: 2;
+  background-color: rgb(150, 150, 150);
+  border-radius: 0 0 50% 50%;
+  margin: auto;
+  margin-top: 70%;
+}
+.body {
+  width: 100%;
+  flex: 1;
+  background: var(--body);
+
+  border-radius: 0.6em 0.6em 0 0;
+}
+
+/* https://codepen.io/ghostfood/pen/PByrPj */
+@keyframes blink {
+  90% {
+    transform: none;
+    animation-timing-function: ease-in;
+  }
+  93% {
+    transform: translateY(0.5em) scaleY(0.1);
+  }
+  100% {
+    animation-timing-function: ease-out;
+  }
+}
