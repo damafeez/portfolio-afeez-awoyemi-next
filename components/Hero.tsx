@@ -3,7 +3,7 @@ import AfeezAvatar from './AfeezAvatar'
 export default function Hero() {
   return (
     <header className="flex flex-wrap items-center justify-center py-24 gap-28">
-      <div className="shrink basis-2/3">
+      <div className="flex-1 basis-96">
         <h1 className="text-3xl max-w-xl">
           Building intuitive,
           <br />
@@ -16,7 +16,7 @@ export default function Hero() {
           tools.
         </p>
       </div>
-      <AfeezAvatar className="flex-1 basis-40" />
+      <AfeezAvatar className="flex-1 basis-64" />
     </header>
   )
 }
