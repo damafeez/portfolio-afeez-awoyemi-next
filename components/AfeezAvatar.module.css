@@ -22,7 +22,7 @@
 }
 
 .cap::after {
-  content: "";
+  content: '';
   width: 50%;
   aspect-ratio: 1.5;
 
@@ -60,7 +60,7 @@
 }
 
 .eye::after {
-  content: "";
+  content: '';
   background: black;
   height: 25%;
   aspect-ratio: 1;
@@ -77,8 +77,8 @@
 }
 
 .mouth {
-  width: 2em;
-  aspect-ratio: 2;
+  width: 3em;
+  aspect-ratio: 2.5;
   background-color: rgb(150, 150, 150);
   border-radius: 0 0 50% 50%;
   margin: auto;
