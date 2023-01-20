@@ -1,0 +1,18 @@
+* {
+  cursor: none;
+}
+body:before {
+  content: '';
+  position: absolute;
+  z-index: 999;
+  top: calc(var(--mouse-y) * 1px);
+  left: calc(var(--mouse-x) * 1px);
+  right: 0;
+  bottom: 0;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  mix-blend-mode: difference;
+}
