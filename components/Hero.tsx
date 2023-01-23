@@ -9,7 +9,7 @@ export default function Hero() {
           <br />
           user-friendly applications.
         </h1>
-        <p className="text-foreground-secondary text-opacity-95 text-sm text-justify">
+        <p className="text-foreground-secondary text-justify max-w-4xl">
           I am Afeez Awoyemi, frontend engineer with proven experience in building
           software solutions, facilitating projects from concept to launch. I am
           well-versed in modern frontend technologies, eco systems as well as design
