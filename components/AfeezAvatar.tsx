@@ -1,26 +1,10 @@
 import { clsx } from 'clsx'
-import { createRef, useEffect } from 'react'
+import { createRef, RefObject, useEffect } from 'react'
 import styles from './AfeezAvatar.module.css'
 
 export default function AfeezAvatar({ className = '' }) {
   const canvasRef = createRef<HTMLDivElement>()
-
-  useEffect(() => {
-    const onMouseMove = function (e: MouseEvent) {
-      canvasRef.current?.style.setProperty(
-        '--mouse-x-relative',
-        (e.clientX / window.innerWidth).toString()
-      )
-
-      canvasRef.current?.style.setProperty(
-        '--mouse-y-relative',
-        (e.clientY / window.innerHeight).toString()
-      )
-    }
-
-    document.addEventListener('mousemove', onMouseMove)
-    return () => document.removeEventListener('mousemove', onMouseMove)
-  })
+  useAddRelativePositionToElement(canvasRef)
 
   return (
     <div ref={canvasRef} className={clsx(styles.canvas, className)}>
@@ -36,4 +20,23 @@ export default function AfeezAvatar({ className = '' }) {
       <div className={styles.body}></div>
     </div>
   )
+}
+
+const useAddRelativePositionToElement = (ref: RefObject<HTMLElement>) => {
+  useEffect(() => {
+    const onMouseMove = function (e: MouseEvent) {
+      ref.current?.style.setProperty(
+        '--mouse-x-relative',
+        (e.clientX / window.innerWidth).toString()
+      )
+
+      ref.current?.style.setProperty(
+        '--mouse-y-relative',
+        (e.clientY / window.innerHeight).toString()
+      )
+    }
+
+    document.addEventListener('mousemove', onMouseMove)
+    return () => document.removeEventListener('mousemove', onMouseMove)
+  })
 }
