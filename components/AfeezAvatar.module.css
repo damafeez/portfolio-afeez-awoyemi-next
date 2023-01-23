@@ -68,7 +68,7 @@
 /* iris */
 .eye::after {
   content: '';
-  background: black;
+  background: #343434;
   height: 35%;
   aspect-ratio: 1;
   display: block;
