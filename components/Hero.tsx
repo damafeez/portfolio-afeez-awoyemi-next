@@ -1,8 +1,13 @@
+import clsx from 'clsx'
 import AfeezAvatar from './AfeezAvatar'
 
-export default function Hero() {
+export default function Hero({ className = '' }) {
   return (
-    <header className="flex flex-wrap items-center justify-center py-24 gap-28">
+    <header
+      className={clsx(
+        'flex flex-wrap items-center justify-center py-24 gap-28',
+        className
+      )}>
       <div className="flex-1 basis-96">
         <h1 className="text-3xl max-w-xl">
           Building intuitive,
