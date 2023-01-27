@@ -13,4 +13,11 @@ body:before {
   background: #fff;
   mix-blend-mode: difference;
   pointer-events: none;
+  transition: all 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition-property: width, height, background;
+}
+
+body:has(:is(a, button):not([disabled]):hover)::before {
+  width: 5rem;
+  height: 5rem;
 }
