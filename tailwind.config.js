@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       colors: {
         current: 'currentColor',
+        background: 'rgb(var(--background) / <alpha-value>)',
         'foreground-secondary': 'rgb(var(--foreground-secondary) / <alpha-value>)',
       },
       fontSize: {
