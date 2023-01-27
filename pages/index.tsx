@@ -2,8 +2,25 @@ import Head from 'next/head'
 import Hero from '../components/Hero'
 import About from '../components/About'
 import Nav from '../components/Nav'
+import { useEffect, useRef } from 'react'
 
 export default function Home() {
+  const mainRef = useRef(null)
+
+  useEffect(() => {
+    if (mainRef.current) {
+      const LocomotiveScroll = require('locomotive-scroll').default
+      const scroll = new LocomotiveScroll({
+        el: mainRef.current,
+        smooth: true,
+        inertia: 0.8,
+        smoothMobile: false,
+      })
+
+      return () => scroll.destroy()
+    }
+  }, [mainRef])
+
   return (
     <>
       <Head>
@@ -15,9 +32,9 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
-        <Nav />
-        <Hero />
+      <main data-scroll-container ref={mainRef}>
+        <Nav className="sticky top-0 z-10" />
+        <Hero className=" -mt-16" />
         <About />
       </main>
     </>

@@ -4,12 +4,13 @@ import AfeezAvatar from './AfeezAvatar'
 export default function Hero({ className = '' }) {
   return (
     <header
+      data-scroll-section
       className={clsx(
         'flex flex-wrap items-center justify-center py-24 gap-28',
         className
       )}>
       <div className="flex-1 basis-96">
-        <h1 className="text-3xl max-w-xl">
+        <h1 data-scroll data-scroll-speed="3" className="text-3xl max-w-xl">
           Building intuitive,
           <br />
           user-friendly applications.

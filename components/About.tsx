@@ -1,16 +1,18 @@
 export default function About() {
   return (
-    <section className="py">
-      <h2>About Me</h2>
+    <section data-scroll-section className="py">
+      <h2 data-scroll data-scroll-speed="-1">
+        About Me
+      </h2>
       <p>
-        My software engineering journey started in early 2017 as a curious interest to
-        understand how computers worked, particularly my tiny Android device, a Google
-        search, an excitement, then several months of learning. Nemo eos rem consequuntur
-        tempora alias laudantium vel voluptas autem impedit a ipsa ut suscipit, qui, eum
-        incidunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
-        temporibus asperiores quo nemo, vero ab voluptatibus dolorum doloremque rerum
-        necessitatibus, aspernatur ipsa consequatur rem, magni sed pariatur ratione
-        similique iure!
+        It all began in 2017! My software engineering journey started as a curious
+        interest to understand how computers worked, particularly my tiny Android device,
+        a Google search, an excitement, then several months of learning. Nemo eos rem
+        consequuntur tempora alias laudantium vel voluptas autem impedit a ipsa ut
+        suscipit, qui, eum incidunt. Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Nulla temporibus asperiores quo nemo, vero ab voluptatibus dolorum
+        doloremque rerum necessitatibus, aspernatur ipsa consequatur rem, magni sed
+        pariatur ratione similique iure!
       </p>
       <p>
         Vue resonates very well with the way I think about wiring front-end applications,
