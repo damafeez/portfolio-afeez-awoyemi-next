@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Hero from '../components/Hero'
-import About from '../components/About'
+import About from '../components/AboutMe'
 import Nav from '../components/Nav'
 import { useEffect, useRef } from 'react'
 
@@ -34,7 +34,7 @@ export default function Home() {
       </Head>
       <main data-scroll-container ref={mainRef}>
         <Nav className="sticky top-0 z-10" />
-        <Hero className=" -mt-16" />
+        <Hero className="-mt-16" />
         <About />
       </main>
     </>

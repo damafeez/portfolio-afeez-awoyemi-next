@@ -61,9 +61,36 @@ footer,
 }
 
 h2 {
-  @apply text-2xl text-foreground-secondary text-opacity-20;
+  @apply text-2xl text-foreground text-opacity-20;
 }
 
 p {
   @apply leading-7;
+}
+
+// utilities
+.border-bx {
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+
+    @apply border-solid border-0 border-b border-r border-foreground-secondary border-opacity-50;
+
+    top: -2rem;
+    left: -2rem;
+    width: 2rem;
+    aspect-ratio: 1;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+
+    @apply border-solid border-0 border-t border-r border-foreground-secondary border-opacity-50;
+
+    bottom: -2rem;
+    left: -2rem;
+    width: 2rem;
+    aspect-ratio: 1;
+  }
 }

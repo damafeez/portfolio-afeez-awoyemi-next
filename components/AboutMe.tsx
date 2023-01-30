@@ -1,6 +1,8 @@
+import Technologies from './Technologies'
+
 export default function About() {
   return (
-    <section data-scroll-section className="py">
+    <section data-scroll-section className="py text-foreground-secondary">
       <h2 data-scroll data-scroll-speed="-1">
         About Me
       </h2>
@@ -27,6 +29,21 @@ export default function About() {
         why I enjoy web and software development - that you get the chance to impact and
         improve the lives of real people.
       </p>
+
+      <div className="flex flex-wrap items-center gap-8 mt-24">
+        <h3 className="text-xl leading-loose tracking-wide text-foreground text-opacity-30">
+          <span>some</span>
+          <br />
+          <span className="text-4xl leading-5 text-foreground text-opacity-50">
+            TECHNO
+            <br />
+            LOGIES
+          </span>
+          <br />
+          <span>I&rsquo;ve used...</span>
+        </h3>
+        <Technologies className=" md:-mr-14 basis-3/5 grow" />
+      </div>
     </section>
   )
 }
