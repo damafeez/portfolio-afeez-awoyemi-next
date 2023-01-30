@@ -23,7 +23,7 @@ function Technology({ children, className = '', width }: TechnologyProps) {
     <div
       style={{ width: widthRef.current, animationDuration: `${durationRef.current}s` }}
       className={clsx(
-        'flex justify-center items-center aspect-square rounded-full border border-solid border-current text-foreground-secondary animate-float',
+        'flex justify-center items-center aspect-square rounded-full border border-solid border-current text-foreground animate-float',
         className
       )}>
       {children}
@@ -35,7 +35,7 @@ export default function Technologies({ className = '' }) {
   return (
     <div
       className={clsx(
-        'flex flex-wrap items-center justify-around gap-y-10 gap-[5%] border border-solid border-foreground-secondary border-opacity-50 border-r-0 border-bx px-8 py-12',
+        'flex flex-wrap items-center justify-around gap-y-10 gap-[5%] border border-solid border-foreground border-opacity-50 border-r-0 border-bx px-8 py-12',
         className
       )}>
       <Technology width={100} className="animate-float">

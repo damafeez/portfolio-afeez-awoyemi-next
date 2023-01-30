@@ -6,8 +6,8 @@
 :root {
   --border-radius: 12px;
   --background: 15 4 14;
-  --foreground: 226 230 232;
-  --foreground-secondary: 146 146 147;
+  --foreground: 146 146 147;
+  --foreground-secondary: 226 230 232;
 
   --primary-glow: conic-gradient(
     from 180deg at 50% 50%,
@@ -61,7 +61,7 @@ footer,
 }
 
 h2 {
-  @apply text-2xl text-foreground text-opacity-20;
+  @apply text-2xl text-foreground-secondary text-opacity-20;
 }
 
 p {
@@ -75,7 +75,7 @@ p {
     content: '';
     position: absolute;
 
-    @apply border-solid border-0 border-b border-r border-foreground-secondary border-opacity-50;
+    @apply border-solid border-0 border-b border-r border-foreground border-opacity-50;
 
     top: -2rem;
     left: -2rem;
@@ -86,7 +86,7 @@ p {
     content: '';
     position: absolute;
 
-    @apply border-solid border-0 border-t border-r border-foreground-secondary border-opacity-50;
+    @apply border-solid border-0 border-t border-r border-foreground border-opacity-50;
 
     bottom: -2rem;
     left: -2rem;
