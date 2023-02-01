@@ -30,11 +30,11 @@ export default function About() {
         improve the lives of real people.
       </p>
 
-      <div className="flex flex-wrap items-center gap-8 mt-24">
+      <div className="group flex flex-wrap items-center gap-8 mt-24">
         <h3 className="text-xl leading-loose tracking-wide text-foreground-secondary text-opacity-30">
           <span>some</span>
           <br />
-          <span className="text-4xl leading-5 text-foreground-secondary text-opacity-50">
+          <span className="text-4xl leading-5 group-hover:leading-[5.5rem] transition-all duration-1000 delay-1000 text-foreground-secondary text-opacity-50">
             TECHNO
             <br />
             LOGIES
@@ -42,7 +42,7 @@ export default function About() {
           <br />
           <span>I&rsquo;ve used...</span>
         </h3>
-        <Technologies className=" md:-mr-14 basis-3/5 grow" />
+        <Technologies className="md:-mr-14 basis-3/5 grow" />
       </div>
     </section>
   )
