@@ -9,6 +9,7 @@ import {
   SiNodedotjs,
   SiFlutter,
   SiMaterialui,
+  SiGraphql,
 } from 'react-icons/si'
 import { TbBrandNuxt } from 'react-icons/tb'
 import { randomInRange } from '../utils'
@@ -17,7 +18,7 @@ type TechnologyProps = React.PropsWithChildren<{ className?: string; width?: num
 
 function Technology({ children, className = '', width }: TechnologyProps) {
   const widthRef = React.useRef(width ?? randomInRange(65, 100))
-  const durationRef = React.useRef(width ?? randomInRange(8, 18))
+  const durationRef = React.useRef(width ?? randomInRange(9, 20))
 
   return (
     <div
@@ -31,43 +32,39 @@ function Technology({ children, className = '', width }: TechnologyProps) {
   )
 }
 
-export default function Technologies({ className = '' }) {
+export default function Technologies({
+  className = '',
+  ...props
+}: {
+  className?: string
+  [k: `data-scroll${string}`]: any
+}) {
+  const technologies = [
+    FaVuejs,
+    TbBrandNuxt,
+    FaReact,
+    SiNextdotjs,
+    SiTailwindcss,
+    SiTypescript,
+    SiExpress,
+    SiNodedotjs,
+    SiFlutter,
+    SiGraphql,
+    SiMaterialui,
+  ]
+
   return (
     <div
+      {...props}
       className={clsx(
         'flex flex-wrap items-center justify-around gap-y-10 gap-[5%] border border-solid border-foreground border-opacity-50 border-r-0 border-bx px-8 py-12',
         className
       )}>
-      <Technology width={100} className="animate-float">
-        <FaVuejs fontSize="2rem" />
-      </Technology>
-      <Technology>
-        <TbBrandNuxt fontSize="2rem" />
-      </Technology>
-      <Technology width={100} className="animate-float">
-        <FaReact fontSize="2rem" />
-      </Technology>
-      <Technology>
-        <SiNextdotjs fontSize="2rem" />
-      </Technology>
-      <Technology>
-        <SiTailwindcss fontSize="2rem" />
-      </Technology>
-      <Technology>
-        <SiTypescript fontSize="2rem" />
-      </Technology>
-      <Technology>
-        <SiExpress fontSize="2rem" />
-      </Technology>
-      <Technology>
-        <SiNodedotjs fontSize="2rem" />
-      </Technology>
-      <Technology>
-        <SiFlutter fontSize="2rem" />
-      </Technology>
-      <Technology>
-        <SiMaterialui fontSize="2rem" />
-      </Technology>
+      {technologies.map((Component, i) => (
+        <Technology key={i} width={i === 0 ? 100 : undefined} className="animate-float">
+          <Component fontSize="2rem" />
+        </Technology>
+      ))}
     </div>
   )
 }
