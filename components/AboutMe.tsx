@@ -3,7 +3,7 @@ import Technologies from './Technologies'
 export default function About() {
   return (
     <section data-scroll-section className="py">
-      <h2 data-scroll data-scroll-speed="-1">
+      <h2 data-scroll data-scroll-speed="1">
         About Me
       </h2>
       <p>
@@ -34,7 +34,7 @@ export default function About() {
         <h3 className="text-xl leading-loose tracking-wide text-foreground-secondary text-opacity-30">
           <span>some</span>
           <br />
-          <span className="text-4xl leading-5 group-hover:leading-[5.5rem] transition-all duration-1000 delay-1000 text-foreground-secondary text-opacity-50">
+          <span className="text-[5rem] leading-3 group-hover:leading-10 transition-all duration-1000 delay-500 text-foreground-secondary text-opacity-50">
             TECHNO
             <br />
             LOGIES
@@ -42,7 +42,12 @@ export default function About() {
           <br />
           <span>I&rsquo;ve used...</span>
         </h3>
-        <Technologies className="md:-mr-14 basis-3/5 grow" />
+        <Technologies
+          className="md:-mr-16 basis-3/5 grow"
+          data-scroll
+          data-scroll-speed="1"
+          data-scroll-direction="horizontal"
+        />
       </div>
     </section>
   )
