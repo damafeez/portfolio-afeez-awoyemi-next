@@ -3,6 +3,7 @@ import Hero from '../components/Hero'
 import About from '../components/AboutMe'
 import Nav from '../components/Nav'
 import { useEffect, useRef } from 'react'
+import Companies from '../components/CompaniesWorked'
 
 export default function Home() {
   const mainRef = useRef(null)
@@ -13,8 +14,10 @@ export default function Home() {
       const scroll = new LocomotiveScroll({
         el: mainRef.current,
         smooth: true,
-        inertia: 0.8,
-        smoothMobile: false,
+        inertia: 0.9,
+        smartphone: {
+          smooth: false,
+        },
       })
 
       return () => scroll.destroy()
@@ -36,6 +39,7 @@ export default function Home() {
         <Nav className="sticky top-0 z-10" />
         <Hero className="-mt-16" />
         <About />
+        <Companies />
       </main>
     </>
   )
