@@ -13,8 +13,17 @@ export default function useMousePosition() {
             (e.clientX + window.scrollX).toString()
           )
           document.body.style.setProperty(
+            '--mouse-x-relative',
+            (e.clientX / window.innerWidth).toString()
+          )
+
+          document.body.style.setProperty(
             '--mouse-y',
             (e.clientY + window.scrollY).toString()
+          )
+          document.body.style.setProperty(
+            '--mouse-y-relative',
+            (e.clientY / window.innerHeight).toString()
           )
         }, delay)
       }

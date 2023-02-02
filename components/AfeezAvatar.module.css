@@ -10,9 +10,6 @@
   --head: #343434;
   --body: #111111;
   --head-width: 35%;
-
-  --mouse-x-relative: 0.5;
-  --mouse-y-relative: 0.5;
 }
 
 .cap {
@@ -74,8 +71,8 @@
   display: block;
   border-radius: 50%;
   position: absolute;
-  top: calc(var(--mouse-y-relative) * 100%);
-  left: calc(var(--mouse-x-relative) * 100%);
+  top: calc(var(--mouse-y-relative, 0.5) * 100%);
+  left: calc(var(--mouse-x-relative, 0.5) * 100%);
   transform: translate(-50%, -50%);
 }
 
