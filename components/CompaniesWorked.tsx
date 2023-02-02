@@ -18,32 +18,31 @@ export default function Companies() {
             up brand new ones as required); other times, I was a wildcard, touching on
             various backend applications, the mobile driver app, creating Azure functions
             or doing some simple designs.
-            <ul>
-              <li>
-                I lead development for a risk monitoring platform allowing administrators
-                to track site metrics proactively. Lead development for an order
-                dispatching application, allowing administrators to view order status and
-                override driver assignments. This provided an easy way to track orders
-                internally and ensure they were appropriately assigned to the proper
-                drivers for the fastest delivery.
-              </li>
-              <li>
-                I built an internal tool that lets managers tweak order grouping
-                parameters with role-based access. The product increased visibility and
-                consistency by allowing us to track who and when changes were made.
-              </li>
-              <li>
-                I collaborated in rewriting the Order Views section of the customer app in
-                Vue from a legacy application allowing for a more modern, maintainable
-                codebase.
-              </li>
-              <li>
-                I created Azure Serverless Functions integrating with 3rd-party services
-                for driver acquisition and onboarding resulting in overall driver
-                happiness.
-              </li>
-            </ul>
           </p>
+          <ul>
+            <li>
+              I lead development for a risk monitoring platform allowing administrators to
+              track site metrics proactively. Lead development for an order dispatching
+              application, allowing administrators to view order status and override
+              driver assignments. This provided an easy way to track orders internally and
+              ensure they were appropriately assigned to the proper drivers for the
+              fastest delivery.
+            </li>
+            <li>
+              I built an internal tool that lets managers tweak order grouping parameters
+              with role-based access. The product increased visibility and consistency by
+              allowing us to track who and when changes were made.
+            </li>
+            <li>
+              I collaborated in rewriting the Order Views section of the customer app in
+              Vue from a legacy application allowing for a more modern, maintainable
+              codebase.
+            </li>
+            <li>
+              I created Azure Serverless Functions integrating with 3rd-party services for
+              driver acquisition and onboarding resulting in overall driver happiness.
+            </li>
+          </ul>
         </div>
 
         <div className="border-solid hidden lg:block border-0 border-r border-foreground border-opacity-40" />
