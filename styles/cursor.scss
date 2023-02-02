@@ -1,23 +1,26 @@
-body:before {
-  content: '';
-  position: absolute;
-  z-index: 999;
-  top: calc(var(--mouse-y) * 1px);
-  left: calc(var(--mouse-x) * 1px);
-  right: 0;
-  bottom: 0;
-  width: 1.5em;
-  height: 1.5em;
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-  background: #fff;
-  mix-blend-mode: difference;
-  pointer-events: none;
-  transition: all 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-  transition-property: width, height, background;
-}
+// only when mouse is detected
+@media (pointer: fine) {
+  body:before {
+    content: '';
+    position: absolute;
+    z-index: 999;
+    top: calc(var(--mouse-y) * 1px);
+    left: calc(var(--mouse-x) * 1px);
+    right: 0;
+    bottom: 0;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    mix-blend-mode: difference;
+    pointer-events: none;
+    transition: all 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    transition-property: width, height, background;
+  }
 
-body:has(:is(a, button):not([disabled]):hover)::before {
-  width: 5rem;
-  height: 5rem;
+  body:has(:is(a, button):not([disabled]):hover)::before {
+    width: 5rem;
+    height: 5rem;
+  }
 }
