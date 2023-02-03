@@ -1,9 +1,9 @@
 import Head from 'next/head'
-import Hero from '../components/Hero'
-import About from '../components/AboutMe'
-import Nav from '../components/Nav'
+import Hero from '../app/Hero'
+import About from '../app/AboutMe'
+import Nav from '../app/Nav'
 import { useEffect, useRef } from 'react'
-import Companies from '../components/CompaniesWorked'
+import Companies from '../app/CompaniesWorked'
 
 export default function Home() {
   const mainRef = useRef(null)
