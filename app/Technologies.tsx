@@ -12,17 +12,18 @@ import {
   SiGraphql,
 } from 'react-icons/si'
 import { TbBrandNuxt } from 'react-icons/tb'
+import useRandomInRange from '../hooks/useRandomInRange'
 import { randomInRange } from '../utils'
 
 type TechnologyProps = React.PropsWithChildren<{ className?: string; width?: number }>
 
-function Technology({ children, className = '', width }: TechnologyProps) {
-  const widthRef = React.useRef(width ?? randomInRange(65, 100))
-  const durationRef = React.useRef(width ?? randomInRange(9, 20))
+function Technology({ children, className = '', width: initialWidth }: TechnologyProps) {
+  const width = useRandomInRange(initialWidth ?? 65, initialWidth ?? 100)
+  const duration = useRandomInRange(9, 20)
 
   return (
     <div
-      style={{ width: widthRef.current, animationDuration: `${durationRef.current}s` }}
+      style={{ width: width, animationDuration: `${duration}s` }}
       className={clsx(
         'flex justify-center items-center aspect-square rounded-full border border-solid border-current text-foreground animate-float',
         className
