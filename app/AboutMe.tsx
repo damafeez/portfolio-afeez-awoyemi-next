@@ -1,3 +1,4 @@
+import SocialLinks from './ScocialLinks'
 import Technologies from './Technologies'
 
 export default function About() {
@@ -21,6 +22,8 @@ export default function About() {
         why I enjoy web and software development - that you get the chance to impact and
         improve the lives of real people.
       </p>
+
+      <SocialLinks />
 
       <div
         data-scroll
