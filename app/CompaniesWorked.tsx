@@ -1,7 +1,7 @@
 export default function Companies() {
   return (
     <section data-scroll-section className="py">
-      <h2 data-scroll data-scroll-speed="1">
+      <h2 data-scroll data-scroll-speed="0.5">
         Where I&apos;ve worked
       </h2>
 
