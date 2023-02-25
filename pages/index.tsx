@@ -4,6 +4,7 @@ import About from '../app/AboutMe'
 import Nav from '../app/Nav'
 import { useEffect, useRef } from 'react'
 import Companies from '../app/CompaniesWorked'
+import Projects from '../app/Projects'
 
 export default function Home() {
   const mainRef = useRef(null)
@@ -40,6 +41,7 @@ export default function Home() {
         <Hero className="-mt-16" />
         <About />
         <Companies />
+        <Projects />
       </main>
     </>
   )
