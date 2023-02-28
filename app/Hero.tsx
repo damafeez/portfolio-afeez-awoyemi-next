@@ -13,7 +13,7 @@ export default function Hero({ className = '' }) {
         <h1
           data-scroll
           data-scroll-speed="2"
-          className="text-3xl md:text-4xl xl:text-5xl text-foreground-secondary max-w-xl xl:max-w-none">
+          className="text-3xl md:text-4xl 2xl:text-5xl text-foreground-secondary max-w-xl xl:max-w-none">
           Building intuitive,
           <br />
           user-friendly applications.
