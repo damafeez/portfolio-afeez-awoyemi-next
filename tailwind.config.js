@@ -16,10 +16,8 @@ module.exports = {
         '2xl': '2.5rem',
         '3xl': '3.5rem',
         '4xl': '4rem',
-        '5xl': '5.5rem',
-        '7xl': '7rem',
-        '8xl': '8rem',
-        '9xl': '9rem',
+        '5xl': '5rem',
+        '6xl': '6rem',
       },
       animation: {
         float: 'float 12s infinite cubic-bezier(0.455, 0.03, 0.515, 0.955)',
