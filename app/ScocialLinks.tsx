@@ -21,7 +21,7 @@ export default function SocialLinks({ className = '' }) {
     <div className={clsx(className, 'flex gap-4')}>
       {links.map(({ to, icon: Icon }) => (
         <a
-          className="w-14 h-14 border border-solid border-foreground border-opacity-30 flex items-center justify-center rounded-full"
+          className="w-14 h-14 border border-solid border-foreground border-opacity-20 flex items-center justify-center rounded-full"
           key={to}
           href={to}
           target="_blank"
