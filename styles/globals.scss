@@ -7,6 +7,7 @@
 :root {
   --border-radius: 12px;
   --background: 5 6 8;
+  --background-secondary: 11 11 13;
   --foreground: 146 146 147;
   --foreground-secondary: 226 230 232;
 
@@ -53,10 +54,8 @@ footer,
   padding-bottom: 5rem;
 }
 
-@screen md {
-  :is(section, header, footer):not(.min-h-0) {
-    min-height: 100vh;
-  }
+header {
+  min-height: 100vh;
 }
 
 h2 {

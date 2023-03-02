@@ -13,7 +13,6 @@ import {
 } from 'react-icons/si'
 import { TbBrandNuxt } from 'react-icons/tb'
 import useRandomInRange from '../hooks/useRandomInRange'
-import { randomInRange } from '../utils'
 
 type TechnologyProps = React.PropsWithChildren<{ className?: string; width?: number }>
 
@@ -33,6 +32,20 @@ function Technology({ children, className = '', width: initialWidth }: Technolog
   )
 }
 
+const technologies = [
+  FaVuejs,
+  TbBrandNuxt,
+  FaReact,
+  SiNextdotjs,
+  SiTailwindcss,
+  SiTypescript,
+  SiExpress,
+  SiNodedotjs,
+  SiFlutter,
+  SiGraphql,
+  SiMaterialui,
+]
+
 export default function Technologies({
   className = '',
   ...props
@@ -40,20 +53,6 @@ export default function Technologies({
   className?: string
   [k: `data-scroll${string}`]: any
 }) {
-  const technologies = [
-    FaVuejs,
-    TbBrandNuxt,
-    FaReact,
-    SiNextdotjs,
-    SiTailwindcss,
-    SiTypescript,
-    SiExpress,
-    SiNodedotjs,
-    SiFlutter,
-    SiGraphql,
-    SiMaterialui,
-  ]
-
   return (
     <div
       {...props}

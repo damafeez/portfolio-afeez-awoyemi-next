@@ -8,6 +8,7 @@ module.exports = {
       colors: {
         current: 'currentColor',
         background: 'rgb(var(--background) / <alpha-value>)',
+        'background-secondary': 'rgb(var(--background-secondary) / <alpha-value>)',
         foreground: 'rgb(var(--foreground) / <alpha-value>)',
         'foreground-secondary': 'rgb(var(--foreground-secondary) / <alpha-value>)',
       },
