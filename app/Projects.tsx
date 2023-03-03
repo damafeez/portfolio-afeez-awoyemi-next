@@ -25,8 +25,8 @@ export default function Projects() {
             </figure>
             <div className="basis-1/2 flex flex-grow-[2] flex-col">
               <h4 className="text-foreground-secondary leading-none">{project.title}</h4>
-              <p className="text-sm mt-0">{project.description}</p>
-              <span className=" text-foreground-secondary text-opacity-90 mt-8 mb-3">
+              <p className="text-sm max-w-xl mt-0">{project.description}</p>
+              <span className=" text-foreground-secondary text-opacity-90 mt-auto mb-3">
                 <TbBrandStackoverflow className="align-middle mr-2" />
                 {project.technologies.join(', ')}
               </span>
