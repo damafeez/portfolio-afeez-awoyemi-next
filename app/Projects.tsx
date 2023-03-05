@@ -6,7 +6,7 @@ import projects from '../constants/projects'
 
 export default function Projects() {
   return (
-    <section data-scroll-section className="py-12 min-h-[400vh]">
+    <section data-scroll-section className="py-12">
       <h2 data-scroll data-scroll-speed="0.5">
         Some public projects
       </h2>

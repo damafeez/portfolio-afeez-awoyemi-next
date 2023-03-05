@@ -8,19 +8,19 @@ export default function About() {
         About Me
       </h2>
       <p>
-        My software engineering journey started as a curious interest to understand how
-        computers worked, particularly my tiny Android device, a Google search, an
-        excitement, then several months of learning. Nemo eos rem consequuntur tempora
-        alias laudantium vel voluptas autem impedit a ipsa ut suscipit, qui, eum incidunt.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla temporibus
-        asperiores quo nemo, vero ab voluptatibus dolorum doloremque rerum necessitatibus,
-        aspernatur ipsa consequatur rem, magni sed pariatur ratione similique iure!
+        My journey into software engineering started with a curiosity about how my Android
+        device worked, which led me to dive into learning about programming. Since then,
+        I&rsquo;ve been driven by the desire to use technology to create meaningful
+        solutions for real-world problems. Recently, I&rsquo;ve had the pleasure of
+        working on applications projects that truly embodied my passion for impactful
+        software development. Seeing how my work directly impacted the lives real live
+        users was a heartwarming experience that reinforced my love for this field.
       </p>
       <p>
-        A friend of mine had such heartwarming comments and excitement when he found out I
-        had worked on the application he uses while delivering orders for GoPuff, this is
-        why I enjoy web and software development - that you get the chance to impact and
-        improve the lives of real people.
+        I&rsquo;m committed to continuous learning and growth, always seeking out new
+        challenges and opportunities to expand my skills. With a focus on frontend
+        engineering, I&rsquo;m excited to continue creating elegant, user-friendly
+        interfaces that make a difference in people&rsquo;s lives.
       </p>
 
       <SocialLinks className="mt-6" />
