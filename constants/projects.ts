@@ -11,7 +11,7 @@ const projects = [
     description:
       'I had an idea to build an open-source template engine for generating portfolio sites, suitable for devs, designers, photographers and artists. Folios is still work in progress.',
     technologies: ['vue', 'nuxt', 'tailwind'],
-    url: 'https://folios.page/',
+    url: 'https://folios.page',
     github: 'https://github.com/damafeez/portfolio.ng',
   },
   {
@@ -20,7 +20,7 @@ const projects = [
     description:
       "I developed an image processing tool with VueJS and HTML Canvas. Fonto allows users to select an image, customize the text to overlay on it, and adjust various parameters to achieve the desired outcome. The output image can be previewed and saved on the user's computer.",
     technologies: ['vue', 'html', 'canvas', 'css3'],
-    url: 'https://fonto.netlify.com/',
+    url: 'https://fonto.netlify.com',
     github: 'https://github.com/damafeez/fonto',
   },
   {
@@ -45,7 +45,7 @@ const projects = [
     title: 'Wordle',
     description: 'A desktop version of the wordle clone, built with Vue.',
     technologies: ['vue', 'css3'],
-    url: 'https://wordle-clone.netlify.app/',
+    url: 'https://afeez-wordle-clone.netlify.app',
     github: 'https://github.com/damafeez/wordle',
   },
 ]
