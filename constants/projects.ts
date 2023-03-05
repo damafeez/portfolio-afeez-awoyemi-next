@@ -18,7 +18,7 @@ const projects = [
     image: fonto,
     title: 'Fonto',
     description:
-      'I built an image processing tool with Vue and HTML Canvas for overlaying text on photos. Fonto allows you to upload an image, customize the text to ovrlay on it, tweak some parameters until the desired outcome is reached, then download output image.',
+      "I developed an image processing tool with VueJS and HTML Canvas. Fonto allows users to select an image, customize the text to overlay on it, and adjust various parameters to achieve the desired outcome. The output image can be previewed and saved on the user's computer.",
     technologies: ['vue', 'html', 'canvas', 'css3'],
     url: 'https://fonto.netlify.com/',
     github: 'https://github.com/damafeez/fonto',
@@ -27,7 +27,7 @@ const projects = [
     image: simpleMusic,
     title: 'Simple Music',
     description:
-      'A simple music player with a beautiful interface. A simple music player with a beautiful interface.',
+      'As one of my earliest dabbles into Flutter, I built a music player with a beautiful interface.',
     technologies: ['flutter', 'dart', 'mobile'],
     url: 'https://play.google.com/store/apps/details?id=afeez.awoyemi.simple_music_player',
     github: 'https://github.com/damafeez/simple-music',
@@ -36,15 +36,14 @@ const projects = [
     image: wordleMobile,
     title: 'Wordle (mobile)',
     description:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur ipsam error, fuga alias assumenda commodi reiciendis numquam ducimus atque uaerat modi beatae ratione in',
+      'Wordle needs no introduction! I built a feature-complete clone of the viral word game in react-native and typescript.',
     technologies: ['react', 'react-native', 'typescript'],
     github: 'https://github.com/damafeez/wordle-react-native',
   },
   {
     image: wordle,
     title: 'Wordle',
-    description:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur ipsam error, fuga alias assumenda commodi reiciendis numquam ducimus atque uaerat modi beatae ratione in',
+    description: 'A desktop version of the wordle clone, built with Vue.',
     technologies: ['vue', 'css3'],
     url: 'https://wordle-clone.netlify.app/',
     github: 'https://github.com/damafeez/wordle',
