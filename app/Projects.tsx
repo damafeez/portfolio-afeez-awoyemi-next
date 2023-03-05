@@ -35,13 +35,15 @@ export default function Projects() {
                 {project.url && (
                   <a
                     href={project.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="rounded py-2 px-6 border border-solid border-foreground border-opacity-20 hover:border-opacity-80 transition duration-300 no-underline">
                     Visit&nbsp;&nbsp;
                     <BsBoxArrowUpRight />
                   </a>
                 )}
                 {project.github && (
-                  <a href="#">
+                  <a href={project.github} target="_blank" rel="noopener noreferrer">
                     <SiGithub className="align-middle text-xl" />
                   </a>
                 )}
