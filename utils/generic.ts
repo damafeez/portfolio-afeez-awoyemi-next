@@ -31,12 +31,34 @@ export const loadImage = (url: string, maxWidth?: number): Promise<HTMLImageElem
 
         const el = document.createElement('img')
         el.src = canvas.toDataURL('image/png')
-        resolve(el)
+
+        el.onerror = reject
+        el.onload = resolve.bind(null, el)
       } else {
         resolve(img)
       }
     }
   })
+}
+
+export const getRenderLoop = (func: () => void, fps = 40) => {
+  let animationId: number
+  let timeoutId: NodeJS.Timeout
+
+  const renderLoop = () => {
+    func()
+
+    timeoutId = setTimeout(() => {
+      animationId = window.requestAnimationFrame(renderLoop)
+    }, 1000 / fps)
+  }
+
+  const stopRenderLoop = () => {
+    window.clearTimeout(timeoutId)
+    window.cancelAnimationFrame(animationId)
+  }
+
+  return [renderLoop, stopRenderLoop]
 }
 
 export const randomInRange = (from: number, to: number): number => {
