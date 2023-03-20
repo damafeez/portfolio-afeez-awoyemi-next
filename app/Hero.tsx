@@ -6,10 +6,10 @@ export default function Hero({ className = '' }) {
     <header
       data-scroll-section
       className={clsx(
-        'flex flex-wrap items-center justify-center py-24 gap-28',
+        'flex flex-wrap items-center justify-center py-24 gap-24',
         className
       )}>
-      <div className="flex-1 basis-96">
+      <div className="flex-1 grow-[3] basis-96">
         <h1
           data-scroll
           data-scroll-speed="2"

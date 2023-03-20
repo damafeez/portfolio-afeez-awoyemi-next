@@ -11,7 +11,7 @@ const cursor = {
 const fps = 25
 const colorThreshold = 25
 const imgUrl = '/me.png'
-const resolution = 80
+const resolution = 85
 
 export default function AfeezAvatar({ className = '' }) {
   const canvasRef = useRef<HTMLCanvasElement>(null)
