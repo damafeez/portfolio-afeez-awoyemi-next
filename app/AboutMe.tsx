@@ -28,11 +28,11 @@ export default function About() {
       <div
         data-scroll
         data-scroll-speed="2.5"
-        className="group flex flex-wrap items-center gap-8 mt-24">
+        className="group mt-24 flex flex-wrap items-center gap-8">
         <h3 className="text-xl leading-loose tracking-wide text-foreground-secondary text-opacity-30">
           <span>some</span>
           <br />
-          <span className="text-[5rem] leading-3 group-hover:leading-10 transition-all duration-1000 delay-300 text-foreground-secondary text-opacity-50">
+          <span className="text-[5rem] leading-3 text-foreground-secondary text-opacity-50 transition-all delay-300 duration-1000 group-hover:leading-10">
             TECHNO
             <br />
             LOGIES
@@ -41,7 +41,7 @@ export default function About() {
           <span>I&rsquo;ve used...</span>
         </h3>
         <Technologies
-          className="md:-mr-16 basis-3/5 grow"
+          className="grow basis-3/5 md:-mr-16"
           data-scroll
           data-scroll-speed="1"
           data-scroll-direction="horizontal"
