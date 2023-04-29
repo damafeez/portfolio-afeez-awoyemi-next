@@ -6,8 +6,9 @@ export default function Nav({ className = '' }) {
   return (
     <nav className={clsx('py-4', className)}>
       <Link
-        className="text-xl flex items-center justify-center w-20 h-20 bg-background text-foreground-secondary rounded-full -ml-6"
-        href="/">
+        className="-ml-6 flex h-20 w-20 items-center justify-center rounded-full bg-background text-xl text-foreground-secondary"
+        href="/"
+      >
         <LogoSvg />
       </Link>
     </nav>

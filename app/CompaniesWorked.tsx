@@ -6,7 +6,7 @@ export default function Companies() {
       </h2>
 
       <div className="flex flex-wrap gap-x-10 gap-y-20">
-        <div className="basis-3/5 grow">
+        <div className="grow basis-3/5">
           <h3 className="text-foreground-secondary text-opacity-60">
             GoPuff (September 2019 - September 2022)
           </h3>
@@ -47,7 +47,7 @@ export default function Companies() {
           </ul>
         </div>
 
-        <div className="border-solid hidden lg:block border-0 border-r border-foreground border-opacity-40" />
+        <div className="hidden border-0 border-r border-solid border-foreground border-opacity-40 lg:block" />
 
         <div className="grow basis-80">
           <h3 className="text-foreground-secondary text-opacity-60">

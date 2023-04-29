@@ -29,11 +29,12 @@ export default function SocialLinks({ className = '' }) {
       {links.map(({ to, icon: Icon, title }) => (
         <a
           title={title}
-          className="w-14 h-14 border border-solid border-foreground border-opacity-20 flex items-center justify-center rounded-full"
+          className="flex h-14 w-14 items-center justify-center rounded-full border border-solid border-foreground border-opacity-20"
           key={to}
           href={to}
           target="_blank"
-          rel="noopener noreferrer">
+          rel="noopener noreferrer"
+        >
           <Icon fontSize={18} />
         </a>
       ))}

@@ -14,8 +14,9 @@ export default function Projects() {
         {projects.map((project) => (
           <div
             key={project.title}
-            className="bg-background-secondary rounded-3xl px-10 py-14 flex flex-wrap gap-y-10 gap-x-6 mb-20">
-            <figure className="basis-[24rem] flex-grow relative aspect-video m-0">
+            className="mb-20 flex flex-wrap gap-y-10 gap-x-6 rounded-3xl bg-background-secondary px-10 py-14"
+          >
+            <figure className="relative m-0 aspect-video flex-grow basis-[24rem]">
               <Image
                 className="rounded-xl object-contain"
                 fill
@@ -23,21 +24,22 @@ export default function Projects() {
                 alt={project.title + ' app'}
               />
             </figure>
-            <div className="basis-1/2 flex flex-grow-[2] flex-col">
-              <h4 className="text-foreground-secondary leading-none">{project.title}</h4>
-              <p className="text-sm max-w-xl mt-0 mb-6">{project.description}</p>
-              <span className="text-foreground-secondary text-opacity-90 mt-auto mb-3">
-                <TbBrandStackoverflow className="align-middle mr-2" />
+            <div className="flex flex-grow-[2] basis-1/2 flex-col">
+              <h4 className="leading-none text-foreground-secondary">{project.title}</h4>
+              <p className="mt-0 mb-6 max-w-xl text-sm">{project.description}</p>
+              <span className="mt-auto mb-3 text-foreground-secondary text-opacity-90">
+                <TbBrandStackoverflow className="mr-2 align-middle" />
                 {project.technologies.join(', ')}
               </span>
 
-              <div className="flex items-center flex-wrap gap-4">
+              <div className="flex flex-wrap items-center gap-4">
                 {project.url && (
                   <a
                     href={project.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="rounded py-2 px-6 border border-solid border-foreground border-opacity-20 hover:border-opacity-80 transition duration-300 no-underline">
+                    className="rounded border border-solid border-foreground border-opacity-20 py-2 px-6 no-underline transition duration-300 hover:border-opacity-80"
+                  >
                     Visit&nbsp;&nbsp;
                     <BsBoxArrowUpRight />
                   </a>

@@ -24,9 +24,10 @@ function Technology({ children, className = '', width: initialWidth }: Technolog
     <div
       style={{ width: width, animationDuration: `${duration}s` }}
       className={clsx(
-        'flex justify-center items-center aspect-square rounded-full border border-solid border-current text-foreground animate-float',
+        'flex aspect-square animate-float items-center justify-center rounded-full border border-solid border-current text-foreground',
         className
-      )}>
+      )}
+    >
       {children}
     </div>
   )
@@ -57,9 +58,10 @@ export default function Technologies({
     <div
       {...props}
       className={clsx(
-        'flex flex-wrap items-center justify-around gap-y-10 gap-[5%] border border-solid border-foreground border-opacity-50 border-r-0 border-bx px-8 py-12',
+        'border-bx flex flex-wrap items-center justify-around gap-[5%] gap-y-10 border border-r-0 border-solid border-foreground border-opacity-50 px-8 py-12',
         className
-      )}>
+      )}
+    >
       {technologies.map((Component, i) => (
         <Technology key={i} width={i === 0 ? 100 : undefined} className="animate-float">
           <Component fontSize="2rem" />

@@ -73,7 +73,7 @@ p {
     content: '';
     position: absolute;
 
-    @apply border-solid border-0 border-b border-r border-foreground border-opacity-50;
+    @apply border-0 border-b border-r border-solid border-foreground border-opacity-50;
 
     top: -2rem;
     left: -2rem;
@@ -84,7 +84,7 @@ p {
     content: '';
     position: absolute;
 
-    @apply border-solid border-0 border-t border-r border-foreground border-opacity-50;
+    @apply border-0 border-t border-r border-solid border-foreground border-opacity-50;
 
     bottom: -2rem;
     left: -2rem;

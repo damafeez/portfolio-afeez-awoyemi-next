@@ -28,7 +28,8 @@ export default function About() {
       <div
         data-scroll
         data-scroll-speed="2.5"
-        className="group mt-24 flex flex-wrap items-center gap-8">
+        className="group mt-24 flex flex-wrap items-center gap-8"
+      >
         <h3 className="text-xl leading-loose tracking-wide text-foreground-secondary text-opacity-30">
           <span>some</span>
           <br />
