@@ -1,9 +1,15 @@
 import { Metadata } from 'next'
 import Script from 'next/script'
-
+import { Poppins } from 'next/font/google'
 import '../styles/globals.scss'
 import '../styles/cursor.scss'
 import Nav from './components/Nav'
+
+const poppins = Poppins({
+  display: 'swap',
+  subsets: ['latin'],
+  weight: ['400', '500', '600'],
+})
 
 const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_ID
 
@@ -16,7 +22,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" className={poppins.className}>
       <Script
         src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
         strategy="afterInteractive"
