@@ -1,6 +1,6 @@
 import clsx from 'clsx'
-import { SiGithub, SiGmail, SiLinkedin } from 'react-icons/si'
 import { IoDocumentTextOutline } from 'react-icons/io5'
+import { SiGithub, SiGmail, SiLinkedin } from 'react-icons/si'
 
 const links = [
   {
@@ -33,8 +33,7 @@ export default function SocialLinks({ className = '' }) {
           key={to}
           href={to}
           target="_blank"
-          rel="noopener noreferrer"
-        >
+          rel="noopener noreferrer">
           <Icon fontSize={18} />
         </a>
       ))}

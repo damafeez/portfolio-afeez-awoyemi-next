@@ -8,14 +8,12 @@ export default function Hero({ className = '' }) {
       className={clsx(
         'flex flex-wrap items-center justify-center gap-28 py-24',
         className
-      )}
-    >
+      )}>
       <div className="flex-1 basis-96">
         <h1
           data-scroll
           data-scroll-speed="2"
-          className="text-3xl text-foreground-secondary md:text-4xl 2xl:text-5xl"
-        >
+          className="text-3xl text-foreground-secondary md:text-4xl 2xl:text-5xl">
           Building intuitive,
           <br />
           user-friendly applications.

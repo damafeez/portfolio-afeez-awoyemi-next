@@ -12,7 +12,7 @@ export default function About() {
         device worked, which led me to dive into learning about programming. Since then,
         I&rsquo;ve been driven by the desire to use technology to create meaningful
         solutions for real-world problems. Recently, I&rsquo;ve had the pleasure of
-        working on applications projects that truly embodied my passion for impactful
+        working on applications and projects that truly embodied my passion for impactful
         software development. Seeing how my work directly impacted the lives real live
         users was a heartwarming experience that reinforced my love for this field.
       </p>
@@ -28,8 +28,7 @@ export default function About() {
       <div
         data-scroll
         data-scroll-speed="2.5"
-        className="group mt-24 flex flex-wrap items-center gap-8"
-      >
+        className="group mt-24 flex flex-wrap items-center gap-8">
         <h3 className="text-xl leading-loose tracking-wide text-foreground-secondary text-opacity-30">
           <span>some</span>
           <br />
